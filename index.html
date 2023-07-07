@@ -4,45 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     
+
     <title>Compra de pasajes en linea</title>
     <link rel="stylesheet" href="./estilos.css" />
     <script src="./alerts.js"></script>
-   <style>.rojo{
-    border: 1px solid red;}</style>
+    <style>
+      .rojo {
+        border: 1px solid red;
+      }
+    </style>
     <img src="./flying-airplane-silhouette-design-free-vector.jpg" alt="" />
   </head>
   <body>
- <div class="cont"id="cont"> </div>
+    <div class="cont" id="cont"></div>
 
-    <div class="contenedor"id="formulario">
+    <div class="contenedor" id="formulario">
       <form id="formulario" action="" method="">
-        <input type="text" class="mail" name="mail" id="mail" placeholder="direccion@mail.com" />
-        <input type="password" name="contraseña" id="contraseña" placeholder="contraseña" />
+        <input
+          type="text"
+          class="mail"
+          name="mail"
+          id="mail"
+          value="usuario@gmail.com"
+          placeholder="direccion@mail.com"
+        />
+        <input
+          type="password"
+          name="contrasena"
+          value="fasdfas"
+          id="contrasena"
+          placeholder="contraseña"
+        />
         <select name="pais" id="pais">
           <option selected disabled value="">Selecciona tu ubicacion</option>
-          <option value="mexico">México</option>
+          <option value="mexico" selected>México</option>
           <option value="brasil">Brasil</option>
           <option value="argentina">Argentina</option>
           <option value="peru">Peru</option>
         </select>
         <input type="date" name="fecha" id="fecha" />
         <label for="terminos-y-condiciones">
-          <input type="checkbox" id="terminos" name="terminos-y-condiciones"
+          <input
+            type="checkbox"
+            checked
+            id="terminos"
+            name="terminos-y-condiciones"
           />
           Aceptar terminos y condiciones
         </label>
         <button onclick="ingresar00()">Ingresar</button>
         <div class="btn-agregar">
-          <a  href="#" class="" onclick="crearUsuario()">Crear usuario</a>
+          <a href="#" class="" onclick="crearUsuario()">Crear usuario</a>
         </div>
         <div class="">
-          <a href="#" class="" onclick="crearUsuario()">Olvidaste tu contraseña?</a>
+          <a href="#" class="" onclick="crearUsuario()"
+            >Olvidaste tu contrasena?</a
+          >
         </div>
-        <script src="./miarchivo.js"></script>
-      <a href="index2.html">Calcular gastos</a>
+        <a href="index2.html">Calcular gastos</a>
       </form>
     </div>
+    <script src="./miarchivo.js"></script>
   </body>
-  
 </html>
