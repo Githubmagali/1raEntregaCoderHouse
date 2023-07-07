@@ -21,6 +21,14 @@
     <div class="contenedor" id="formulario">
       <form id="formulario" action="" method="">
         <input
+        type="text"
+        class="nombreCompleto"
+        name="nombreCompleto"
+        id="nombreCompleto"
+        value="Nuevo usuario"
+        placeholder="Nombre y apellido"
+      />
+        <input
           type="text"
           class="mail"
           name="mail"
@@ -35,35 +43,26 @@
           id="contrasena"
           placeholder="contraseña"
         />
+        <input
+        type="password"
+        name="verificarContrasena"
+        value="fasdfas"
+        id="verificarContrasena"
+        placeholder="repetircontraseña"
+      />
         <select name="pais" id="pais">
-          <option selected disabled value="">Selecciona tu ubicacion</option>
+          <option selected disabled value="">Pais de region</option>
           <option value="mexico">México</option>
           <option value="brasil">Brasil</option>
           <option value="argentina">Argentina</option>
           <option value="peru">Peru</option>
         </select>
-        <input type="date" name="fecha" id="fecha" />
-        <label for="terminos-y-condiciones">
-          <input
-            type="checkbox"
-            checked
-            id="terminos"
-            name="terminos-y-condiciones"
-          />
-          Aceptar terminos y condiciones
-        </label>
-        <button onclick="ingresar00()">Ingresar</button>
-        <div class="btn-agregar">
-          <a href="crearUsuario.html"class="" >Crear usuario</a>
-        </div>
-        <div class="">
-          <a href="recuperarUsuario.html" class="" 
-            >Olvidaste tu contraseña?</a
-          >
-        </div>
-        <a href="index2.html">Calcular gastos</a>
+      
+        <button>Crear usuario</button>
+        <a href="index.html">Volver a la pagina anterior</a>
+       
       </form>
     </div>
-    <script src="./miarchivo.js"></script>
+    <script src="./crearUsuario.js"></script>
   </body>
 </html>
