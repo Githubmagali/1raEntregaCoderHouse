@@ -139,7 +139,7 @@ const destinos = [
         id: "1",
         fecha: new Date(),
         correo: mail00.value,
-        contrasena: mail00.value,
+        contrasena: contrasena00.value,
         pais: pais00.value,
         fechaa: fecha00.value,
       };
@@ -152,14 +152,18 @@ const destinos = [
         window.localStorage.setItem("cont", JSON.stringify([{ ...nuevoReg }]));
       }
     }
-  
     if (mail00.value === "") {
       mail00.classList.add("rojo");
     } else {
       mail00.classList.remove("rojo");
       mail00.value = "";
     }
-  
+    if (contrasena00.value === "") {
+      contrasena00.classList.add("rojo");
+    } else {
+      contrasena00.classList.remove("rojo");
+      contrasena00.value = "";
+    }
     if (pais00.value === "") {
       pais00.classList.add("rojo");
     } else {
@@ -181,10 +185,5 @@ const destinos = [
       terminos00.value = "";
     }
   
-    if (contrasena00.value === "") {
-      contrasena00.classList.add("rojo");
-    } else {
-      contrasena00.classList.remove("rojo");
-      contrasena00.value = "";
-    }
+    
   });
