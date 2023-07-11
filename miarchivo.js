@@ -141,7 +141,7 @@ const destinos = [
         correo: mail00.value,
         contrasena: contrasena00.value,
         pais: pais00.value,
-        fechaa: fecha00.value,
+        fechaSeleccionada: fecha00.value,
       };
       const registroPasajeros = JSON.parse(window.localStorage.getItem("cont"));
   
