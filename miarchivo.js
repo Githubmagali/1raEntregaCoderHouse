@@ -78,7 +78,7 @@ const destinos = [
     const input00 = document.querySelector("#mail");
     const correo = input00.value;
     const expReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // A simple version of an email regex
-    console.log("coreooo", input00.value, expReg.test(correo));
+    //onsole.log("coreooo", input00.value, expReg.test(correo));
     if (!expReg.test(correo)) {
       input00.classList.add("--error");
       //console.log("correo no llego");
@@ -107,10 +107,10 @@ const destinos = [
     const input = document.querySelector("#pais");
     const pais = input.value;
     if (pais) {
-      console.log("pais llego");
+      //console.log("pais llego");
       return true;
     }
-    console.log("pais no llego");
+    //console.log("pais no llego");
     return false;
   }
   

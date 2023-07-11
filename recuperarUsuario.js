@@ -6,13 +6,11 @@ function validarCorreo() {
     const input00 = document.querySelector("#mail");
     const correo = input00.value;
     const expReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // A simple version of an email regex
-    console.log("coreooo", input00.value, expReg.test(correo));
+
     if (!expReg.test(correo)) {
       input00.classList.add("--error");
-      //console.log("correo no llego");
       return false;
     }
-    //console.log("correo llego");
     return true;
   }
 
