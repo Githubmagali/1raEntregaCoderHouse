@@ -21,7 +21,7 @@
     <div class="cont" id="cont"></div>
 
     <div class="contenedor" id="formulario">
-      <form id="formulario" action="" method="">
+      <form id="formulario" onsubmit="return validarLogin()"action="" method="">
         <input
           type="text"
           class="mail"
@@ -33,7 +33,7 @@
         <input
           type="password"
           name="contrasena"
-          value="fasdfas"
+          value="1234"
           id="contrasena"
           placeholder="contraseña"
         />
@@ -55,9 +55,9 @@
           />
           Aceptar terminos y condiciones
         </a>
-        <button onclick="ingresar00()">Ingresar</button>
+      <button type="submit"><a href="index3.html" target="_blank">Iniciar sesion</a></button>
         <div class="btn-agregar">
-          <a href="crearUsuario.html"class="" >Crear usuario</a>
+        <a href="crearUsuario.html"class="" >Crear usuario</a>
         </div>
         <div class="">
           <a href="recuperarUsuario.html" class="" 

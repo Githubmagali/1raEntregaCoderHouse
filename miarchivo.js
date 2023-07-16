@@ -187,3 +187,17 @@ const destinos = [
   
     
   });
+
+  function validarLogin(){
+    var username= document.getElementById('mail').value;
+    var password= document.getElementById('contrasena').value;
+
+    if(username === 'usuario@gmail.com' && password ==='1234'){
+      alert('Inicio de sesion exitoso');
+      return true;
+    }else{
+      alert('Nombre de usuario o contrasena incorrecta');
+      return false;
+    }
+
+  }
