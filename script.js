@@ -1,4 +1,4 @@
-const mensaje ='Bienvenido';
+const mensaje ='Bienvenido'; prompt('Ingresa tu nombre');
 const velocidadDeEscritura= 200;
 
 function escribirMensaje(){
