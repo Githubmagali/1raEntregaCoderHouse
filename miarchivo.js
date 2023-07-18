@@ -201,3 +201,22 @@ const destinos = [
     }
 
   }
+
+
+  function abrirVentanaEmergente(imagen){
+  if(imagen === 'imagen1'){
+    window.open('https://www.turismomexico.es/',"ventana emergente", "width=400,height=400");
+  }else if (imagen === 'imagen2'){
+    window.open('https://www.turistaloserastu.es/nuestros-destinos/guia-de-viaje-a-peru/',"ventana emergente", "width=400,height=400");
+  }else if (imagen === 'imagen3'){
+    window.open('https://www.visitbrasil.com/es/',"ventana emergente", "width=400,height=400");
+  }else if (imagen === 'imagen4'){
+    window.open('https://ingeoexpert.com/2021/11/30/las-piramides-de-mexico-como-cuando-construyeron/',"ventana emergente", "width=400,height=400");
+
+  }else if((imagen === 'imagen5')){
+    window.open('https://www.welcomeargentina.com/',"ventana emergente", "width=400,height=400");
+  }else if((imagen === 'imagen6')){
+    window.open('https://www.sernatur.cl/',"ventana emergente", "width=400,height=400");
+  }
+}
+  

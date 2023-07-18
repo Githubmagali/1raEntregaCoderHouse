@@ -1,6 +1,7 @@
 const nombre =prompt('Ingresa tu nombre');
-const mensaje ='Bienvenid@ '+nombre;
+const mensaje = 'Bienvenid@  '+ nombre;
 const velocidadDeEscritura= 200;
+
 
 function escribirMensaje(){
     let indice=0;
@@ -15,3 +16,28 @@ function escribirMensaje(){
     },velocidadDeEscritura);
 }
 window.onload =escribirMensaje;
+
+
+function mostrarImagenes(entries, observer){
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting){
+            entry.target.classList.add('mostrar');
+        }
+    });
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+    const contenedorImagenes= document.querySelector(".contenedor-imagenes");
+    const imagenes = contenedorImagenes.querySelectorAll('.imagen');
+    const opcionesObserver={
+        root:null,
+        rootMargin:'0px',
+        threshold:0.9,
+    };
+
+
+const observer = new IntersectionObserver(mostrarImagenes, opcionesObserver);
+imagenes.forEach((imagen)=>{
+    observer.observe(imagen);
+});
+});

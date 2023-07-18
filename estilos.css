@@ -62,4 +62,29 @@ button {
 button:hover {
 	background: #95969b;
 }
+.rojo {
+	border: 1px solid red;
+  }
 
+.imagen {
+	width: 200px;
+	 display: inline;
+
+  }
+  h2{
+	text-align: center;
+  }
+
+.contenedor-imagenes{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	
+}
+.imagen{
+	opacity:0;
+	transition: opacity 0.5s;
+}
+.mostrar{
+	opacity:1;
+}
