@@ -41,3 +41,12 @@ imagenes.forEach((imagen)=>{
     observer.observe(imagen);
 });
 });
+
+function zoomIn(elemento){
+    elemento.style.transform ="scale(1.2)";
+}
+
+function zoomOut(elemento){
+    elemento.style.transform ="scale(1)";
+}
+

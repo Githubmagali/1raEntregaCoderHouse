@@ -68,9 +68,16 @@ button:hover {
 
 .imagen {
 	width: 200px;
-	 display: inline;
+	display:inline-block ;
+	transition: transform 0.3s ease;
+	transform:scale(1);
 
   }
+  .imagen:hover{
+	transform:scale(1.2);
+  }
+
+
   h2{
 	text-align: center;
   }
@@ -81,10 +88,10 @@ button:hover {
 	justify-content:center;
 	
 }
-.imagen{
-	opacity:0;
-	transition: opacity 0.5s;
-}
+
 .mostrar{
 	opacity:1;
+}
+.ventana{
+	display: none;
 }
