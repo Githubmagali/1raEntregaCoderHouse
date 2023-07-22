@@ -193,10 +193,10 @@ const destinos = [
     var password= document.getElementById('contrasena').value;
 
     if(username === 'usuario@gmail.com' && password ==='1234'){
-      alert('Inicio de sesion exitoso');
+      
       return true;
     }else{
-      alert('Nombre de usuario o contrasena incorrecta');
+     
       return false;
     }
 
@@ -221,9 +221,3 @@ const destinos = [
 }
   
 
-window.addEventListener('load', ()=>{
-   
-  document.querySelectorAll('.hero__burbuja')[0].classList.add('hero__burbuja--active-1');
-  document.querySelectorAll('.hero__burbuja')[1].classList.add('hero__burbuja--active-2');
-
-});

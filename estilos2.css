@@ -1,100 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 *{
-    box-sizing: border-box;
+box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
+
 body{
-    margin:0;
-    font-family: sans-serif;
-}
-.rojo {
-	border: 1px solid red;
-  }
-
-.formulario{
-    width:500px;
-    max-width:100%;
-    margin:auto;
-  margin-top: 30px;
-  padding: 20px;
-  box-shadow:0 0 20px 1px rgba(0,0,0, 0.3);
-  position:relative;
-}
-.formulario__titulo{
-    text-align:center;
-    margin-top:0;
-    color:rgba(0,0,0,0.7);
-
+    font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	width: 100%;
+	background: #eaeaea;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.formulario__input, .formulario__label,
- .formulario__submit
-  {
-    display: block;
-    width:100%;
-    font-size: 1.3em;
- 
-}
-
-
-.formulario__input{
-    padding: 20px;
-    background:rgba(0,0,0,0.1);
-    border: 1px solid rgba(0,0,0,0.3);
-    margin-bottom: 40px;
-}
-.formulario__input:focus{
-    outline: 1px solid rgb(173, 129, 129);
-}
-
-
-    .formulario__input:focus + .formulario__label{
-    margin-top:-135px;
-}
-
-.formulario__label{
-    
-  
-    padding-left: 40px;
-    position:absolute;
-    margin-top: -85px;
-    z-index: -20;
-    transition:all 0.2s;
-
-}
-
-.fomulario__submit{
-    background: rgba(0,0,0, 0.3);
-    color:white;
-    padding: 10px 20px;
-    cursor: pointer;
-    border:none;
-}
-
-.formulario__anterior{
-	display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-.fijar {
-    margin-top:-135px;
-}
-
-.mensaje{
+.container{
+    position: relative;
     text-align: center;
-    margin-top:0;
-    font-size: 20px;
-   
+    background-image: url(./img/a0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 900px;
+    width:100%;
+    border-radius: 8px;
+    padding:40px;
+    margin:0 15px;
+    margin:0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffffea;
+    margin-bottom: 50px;
+}
+.container header{
+    text-align: center;
+    font-weight:bold;
+}
+.container form{
+    position:relative;
+    margin-top: 16px;
+    min-height:490px;
+    background-color:fcfcfc;
 }
 
-
-.formulario__mensaje{
-    
-    width:100%;
-    height:150px;
-    text-indent:0;
-    text-align:left;
-    padding-top:0;
-    background:rgba(0,0,0,0.1);
-    border: 1px solid rgba(0,0,0,0.3);
-    margin-bottom: 40px;
+.container input{
+    margin-bottom: 30px;
+}
+.input-field header{
+    font-family:Arial, Helvetica, sans-serif;
 }
