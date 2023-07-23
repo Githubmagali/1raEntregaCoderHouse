@@ -15,7 +15,7 @@
 }
 :root{
  --main-color:#0000;
- --second-color:rgb(193, 197, 196);
+ --second-color:rgb(151, 160, 158);
 }
 section{
 padding: 50px 10%;
@@ -83,4 +83,91 @@ header{
 }
 .home-text{
     flex:1 1 17rem;
+}
+
+.home-img{
+    flex:1 1 17rem;
+}
+.home-img img{
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+0%{
+    transform:translate(-11px, 0);
+    
+}
+50%{
+    transform: translate(-0px, -11px);
+}
+100%{
+    transform: translate(-11px, 0);
+}
+}
+
+.home-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:var(--second-color);
+}
+
+.home-text h1{
+    font-size: 3.2rem;
+    color: var(--second-color);
+    font-weight: bolder;
+}
+
+.home-text h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--second-color);
+    text-transform: unset;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.heading{
+    text-align: center;
+    text-transform: unset;
+}
+
+.heading span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.heading h1{
+    font-size: 2rem;
+    color:var(--second-color);
+
+}
+.container-primera{
+    display:flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.container-primera .box{
+    flex: 1 1 10rem;
+    background: var(--main-color);
+    padding:20px;
+    display: inline-block;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+
+}
+.container-primera .box .box-img{
+    width: 300px;
+    height: 300px;
+    margin-top: -100px;
+
+}
+.container-primera .box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position:;
+   
 }
