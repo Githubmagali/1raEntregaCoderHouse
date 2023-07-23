@@ -8,11 +8,16 @@
  scroll-behavior: smooth;
  font-family: 'Courier New', Courier, monospace;
 }
+
+*::selection{
+    color: aliceblue;
+    background: var(--main-color);
+}
 :root{
  --main-color:#0000;
  --second-color:rgb(193, 197, 196);
 }
-.section{
+section{
 padding: 50px 10%;
 }
 
@@ -57,4 +62,25 @@ header{
 
 .navbar a:hover{
     color:var(--main-color);
+}
+
+#menu-icon{
+    font-size:24px;
+    cursor:pointer;
+    z-index:1001;
+    display: none;
+
+}
+
+.home{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    flex-wrap: wrap;
+   align-items: center;
+   background: #eeeeee;
+   gap:1rem ;
+}
+.home-text{
+    flex:1 1 17rem;
 }

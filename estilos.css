@@ -144,7 +144,7 @@ button:hover {
 	padding:50px;
   }
   .container__bienvenido{
-	padding:90px;
+	padding:120px;
   }
 
   header{
@@ -157,6 +157,7 @@ button:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	
 	box-shadow: 0 4px 41px rgba(41, 46, 46, 0.14);
 	transition:0.2s;
 	padding:15px 10%;
@@ -212,4 +213,11 @@ button:hover {
 *::selection{
 	color: #998294;
 	background: var(--main-color);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width:40px;
 }
