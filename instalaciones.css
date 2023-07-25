@@ -61,7 +61,7 @@ header{
 }
 
 .navbar a:hover{
-    color:var(--main-color);
+    color: #000;;
 }
 
 #menu-icon{
@@ -171,3 +171,20 @@ header{
     object-position:;
    
 }
+
+header a img{
+	
+	text-align:center;
+    animation: logo 0.8s linear 0s infinite alternate;
+}
+
+	@keyframes logo {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+    

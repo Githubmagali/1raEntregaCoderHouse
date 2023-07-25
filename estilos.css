@@ -221,3 +221,18 @@ button:hover {
 .logo img{
     width:40px;
 }
+
+.contenedor a img{
+	
+	text-align:center;
+    animation: logo 0.8s linear 0s infinite alternate;
+}
+
+	@keyframes logo {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
