@@ -128,6 +128,7 @@ header{
     margin: 0.5rem 0 1.4rem;
 }
 
+
 .heading{
     text-align: center;
     text-transform: unset;
@@ -191,24 +192,45 @@ header a img{
 	}
 
     
-    .comodidades span{
+    .comodidades h1{
         font-weight:bold;
         color:var(--second-color);
-        padding-top:10px;
-      
+        padding: bottom;
+        margin-bottom:20px;
     }
    
     .imagen_asientos img{
       width:300px;
       height:200px;
       border: 1px solid #b9b9b9;
-      margin: 0 10px;  
+      margin: 0 10px;
+    
 
     }
 
-    .headding{
+    .comodidades_heading{
         display:flex;
-        flex:center;
-        justify-content: center;
+        flex-wrap:wrap;
+      gap:10px;
 
     }
+
+   
+
+    .contenedor__iconos{
+        text-align:center; 
+        font-size: 24px;
+        
+      }
+    
+      .contenedor__iconos i{
+        margin-right: 30px;
+      }
+    
+      .container__copyrigth{
+        text-align:center; 
+        font-size: 10px;
+        padding:50px;
+      }
+
+ 
