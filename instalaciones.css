@@ -219,18 +219,31 @@ header a img{
 
     .contenedor__iconos{
         text-align:center; 
-        font-size: 24px;
+        font-size: 20px;
         
       }
     
       .contenedor__iconos i{
         margin-right: 30px;
+        
+      }
+      .contenedor__iconos a i{
+        text-decoration:none;
+        color:rgb(93, 102, 109);
+    
+      }
+      .contenedor__iconos a i:hover{
+        color:#3b3b3b;
       }
     
       .container__copyrigth{
-        text-align:center; 
-        font-size: 10px;
-        padding:50px;
-      }
-
- 
+		text-align:center; 
+		font-size: 10px;
+		padding:50px;
+	  }
+  .container__copyrigth a{
+	color:#000;
+  }
+	.container__copyrigth a:hover{
+	color:var(--second-color);
+	}
