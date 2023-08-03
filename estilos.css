@@ -282,3 +282,22 @@ button:hover {
 	.container__copyrigth a:hover{
 	color:var(--second-color);
 	}
+
+	.sponsor_1{
+		display:flex;
+		grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap:120px;
+		margin-bottom: 50px;
+		font-weight: bold;
+		color:#5a5858;
+
+	}
+	
+    .logo img{
+		width: 100px;
+		display:flex;
+		grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+		margin-right: 90px;
+		margin-bottom: 90px;
+		font-weight: bold;
+	}
