@@ -284,20 +284,13 @@ button:hover {
 	}
 
 	.sponsor_1{
-		display:flex;
-		grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-		grid-gap:120px;
+		display:grid;
+		grid-template-columns:repeat(4, 1fr);
+		grid-template-rows:repeat(3,1fr);
+		grid-gap:90px;
 		margin-bottom: 50px;
 		font-weight: bold;
 		color:#5a5858;
 
 	}
 	
-    .logo img{
-		width: 100px;
-		display:flex;
-		grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-		margin-right: 90px;
-		margin-bottom: 90px;
-		font-weight: bold;
-	}

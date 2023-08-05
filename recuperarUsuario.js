@@ -8,7 +8,7 @@ function validarCorreo() {
     const expReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // A simple version of an email regex
 
     if (!expReg.test(correo)) {
-      input00.classList.add("--error");
+      input00.classList.add("rojo");
       return false;
     }
     return true;
