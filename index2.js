@@ -5,6 +5,8 @@ const nombreCompleto00 = document.querySelector("#nombreCompleto");
 const dni00 = document.querySelector("#dni");
 const correo00 = document.querySelector("#correo");
 const pais00 = document.querySelector("#pais");
+const ida00 = document.querySelector("#ida");
+const vuelta00 = document.querySelector("#vuelta");
 
  
  function validarNombreCompleto() {
@@ -36,13 +38,29 @@ const pais00 = document.querySelector("#pais");
  }
 
  function validarPais() {
-   const input000 = document.querySelector("#pais");
-   const pais00 = input000.value;
-   if (pais00) {
-     return true;
-   }
-   return false;
- }
+    const input000 = document.querySelector("#pais");
+    const pais00 = input000.value;
+    if (pais00) {
+      return true;
+    }
+    return false;
+  }
+  function validarIda() {
+    const input000 = document.querySelector("#ida");
+    const ida00 = input000.value;
+    if (ida00) {
+      return true;
+    }
+    return false;
+  }
+  function validarVuelta() {
+    const input000 = document.querySelector("#vuelta");
+    const vuelta00 = input000.value;
+    if (vuelta00) {
+      return true;
+    }
+    return false;
+  }
 
  formulario.addEventListener("submit", function (e) {
    e.preventDefault();
@@ -51,7 +69,9 @@ const pais00 = document.querySelector("#pais");
      validarNombreCompleto() &&
      validarDni() &&
      validarCorreo() &&
-     validarPais()
+     validarPais() &&
+     validarIda() &&
+     validarVuelta()
    
 ){
       
@@ -60,7 +80,9 @@ const pais00 = document.querySelector("#pais");
      nombreCompleto: nombreCompleto00.value,
      dni:dni00.value,
      correo: correo00.value,
-     pais: pais00.value
+     pais: pais00.value,
+     ida: ida00.value,
+     vuelta:vuelta00.value
   
    };
    const registroPasajeros = JSON.parse(window.localStorage.getItem("cont"));
