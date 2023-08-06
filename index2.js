@@ -1,20 +1,10 @@
 
-var inputs = document.getElementsByClassName('formulario__input');
-for (var i = 0; i < inputs.length; i++){
-   inputs[i].addEventListener('keyup', function(){
-      if(this.value.length>=1){
-         this.nextElementSibling.classList.add('fijar');
-      }else{
-         this.nextElementSibling.classList.remove('fijar');
-      }
-   });
-}
 
 const formulario= document.querySelector("#formulario");
-const mail00= document.querySelector("#mail");
-const telefono00= document.querySelector("#telefono");
-const mensaje00= document.querySelector("#mensaje");
 const nombreCompleto00 = document.querySelector("#nombreCompleto");
+const dni00 = document.querySelector("#dni");
+const correo00 = document.querySelector("#correo");
+const pais00 = document.querySelector("#pais");
 
  
  function validarNombreCompleto() {
@@ -27,28 +17,28 @@ const nombreCompleto00 = document.querySelector("#nombreCompleto");
 }
 
 
- function validarMail() {
-  const input000 = document.querySelector("#mail");
-  const mail00 = input000.value;
-  if (mail00) {
+ function validarDni() {
+  const input000 = document.querySelector("#dni");
+  const dni00 = input000.value;
+  if (dni00) {
     return true;
   }
   return false;
 }
  
- function validarTelefono() {
-   const input000 = document.querySelector("#telefono");
-   const telefono00 = input000.value;
-   if (telefono00) {
+ function validarCorreo() {
+   const input000 = document.querySelector("#correo");
+   const correo00 = input000.value;
+   if (correo00) {
      return true;
    }
    return false;
  }
 
- function validarMensaje() {
-   const input000 = document.querySelector("#mensaje");
-   const mensaje00 = input000.value;
-   if (mensaje00) {
+ function validarPais() {
+   const input000 = document.querySelector("#pais");
+   const pais00 = input000.value;
+   if (pais00) {
      return true;
    }
    return false;
@@ -59,18 +49,18 @@ const nombreCompleto00 = document.querySelector("#nombreCompleto");
  
    if (
      validarNombreCompleto() &&
-     validarMail() &&
-     validarTelefono() &&
-     validarMensaje()
+     validarDni() &&
+     validarCorreo() &&
+     validarPais()
    
 ){
       
    const nuevoReg = {
      id: "1",
      nombreCompleto: nombreCompleto00.value,
-     mail: mail00.value,
-     telefono: telefono00.value,
-     mensaje: mensaje00.value,
+     dni:dni00.value,
+     correo: correo00.value,
+     pais: pais00.value
   
    };
    const registroPasajeros = JSON.parse(window.localStorage.getItem("cont"));
