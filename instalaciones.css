@@ -252,3 +252,113 @@ header a img{
 	.container__copyrigth a:hover{
 	color:var(--second-color);
 	}
+
+   
+    
+    .imagen {
+            width: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+        }
+
+        
+        .ventana {
+            display: none;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+        
+        }
+        .ventana-active{
+            display: block;
+        }
+            .ventana__overlay {
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            .ventana__correo {
+                width: 90%;
+                max-width: 600px;
+                padding: 40px;
+                background: #fff;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                text-align: center;
+                position: relative;
+            }
+        
+            .ventana__btn-cerrar {
+                position: absolute;
+                right: -40px;
+                top: -40px;
+                cursor: pointer;
+                background: none;
+                border: none;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+            }
+        
+            .ventana__icono-cerrar {
+                width: 100%;
+                height: 100%;
+            }
+        
+            .ventana__titulo {
+                font-size: 24px;
+            }
+        
+            .ventana__imagen-correo {
+                width: 300px;
+            }
+        
+            .ventana__hint {
+                font-size: 16px;
+                color: #0000;
+            }
+        
+            .ventana__body {
+                background: #fff;
+                padding: 5px;
+                width: 90%;
+                max-width: 900px;
+                border-radius: 10px;
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+                gap: 20px;
+                position: relative;
+            }
+        
+            .ventana__imagen {
+                width: 100%;
+                border-radius: 5px;
+                vertical-align: top;
+            }
+        
+            .ventana__fecha {
+                font-size: 14px;
+                color: #000;
+            }
+        
+            .ventana__parrafo {
+                line-height: 24px;
+            }
+        
+            .ventana__info {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px 0;
+            }
+        
