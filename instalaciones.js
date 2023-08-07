@@ -51,3 +51,14 @@ fotos.addEventListener('click', (e) =>{
         fotos2.classList.add('ventana-active');
     }
 });
+
+
+
+    fotos2.querySelector('.ventana__overlay').addEventListener('click', (e)=>{
+      e.preventDefault();
+    
+      //matches metodo permite averiguar si tiene el selector indicado
+      if(e.target.matches('.ventana__overlay')){ //overlay es la parte no visible de la imagen
+        fotos2.classList.remove('ventana-active');
+      }
+    });
