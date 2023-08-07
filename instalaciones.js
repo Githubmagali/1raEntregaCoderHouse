@@ -47,6 +47,7 @@ fotos.addEventListener('click', (e) =>{
         const {titulo, texto} = datosc[0];
         fotos2.querySelector('.ventana__titulo').innerText = titulo;
         fotos2.querySelector('.ventana__parrafo').innerText = texto;
+        fotos2.querySelector('.ventana__imagen').src = fotoClick.querySelector('img').src;
         fotos2.classList.add('ventana-active');
     }
 });
