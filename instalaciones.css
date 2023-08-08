@@ -287,19 +287,12 @@ header a img{
         
         
         
-            .ventana__icono-cerrar {
-                width: 100%;
-                height: 100%;
-            }
         
             .ventana__titulo {
                 font-size: 24px;
             }
         
-            .ventana__imagen-correo {
-                width: 300px;
-            }
-        
+           
             .ventana__hint {
                 font-size: 16px;
                 color: #0000;
