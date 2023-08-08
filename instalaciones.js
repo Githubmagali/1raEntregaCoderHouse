@@ -17,6 +17,20 @@ if(entriesn[0].isIntersecting){
 
 observer00.observe(galeria00);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const fotos = document.getElementById('primera-clase');
 const fotos2 = document.getElementById('ventana-trabajos');
 
@@ -62,3 +76,5 @@ fotos.addEventListener('click', (e) =>{
         fotos2.classList.remove('ventana-active');
       }
     });
+
+

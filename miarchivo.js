@@ -218,6 +218,35 @@ const destinos = [
   }else if((imagen === 'imagen6')){
     window.open('https://www.sernatur.cl/',"ventana emergente", "width=400,height=400");
   }
-}
+};
+
+const botonEmail = document.querySelectorAll('[data-action="abrir-ventana-correo"]');
+const botonesCerrar = document.querySelectorAll('[data-action="cerrar-ventana"]');
+const ventanaCorreo = document.getElementById('ventana-correo');
+
+
+
+
+botonEmail.forEach((boton)=>{
+    boton.addEventListener('click', (e)=>{
+        e.preventDefault();
+        ventanaCorreo.classList.add('ventana--active');
+    });
+});
+
+
+botonesCerrar.forEach((boton)=>{
+    boton.addEventListener('click', (e)=>{
+        e.preventDefault();
+        ventanaCorreo.classList.remove('ventana--active');
+    });
+});
+
+
   
+
+
+
+
+
 
