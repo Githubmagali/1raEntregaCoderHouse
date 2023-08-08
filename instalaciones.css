@@ -329,3 +329,77 @@ header a img{
                 padding: 20px 0;
             }
         
+            
+.comentarios {
+	background: #f1f1f1;
+	padding: 40px 0 40px 65px;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+	border-radius: 0 0 15px 15px;
+}
+	.comentarios__header {
+		margin-bottom: 40px;
+	}
+
+	.comentarios__titulo {
+		margin-bottom: 10px;
+	}
+
+	.comentarios__slider {
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-auto-flow: column;
+		gap: 20px;
+		overflow-x: auto;
+		cursor: move;
+		cursor: -webkit-grab;
+		cursor: -moz-grab;
+		user-select: none;
+		padding-right: 20px;
+	}
+
+	.comentarios__review {
+		min-width: 400px;
+		padding-bottom: 10px;
+		position: relative;
+	}
+
+	.comentarios__contenedor-foto {
+		position: relative;
+		top: 40px;
+		margin-top: -40px;
+	}
+
+	.comentarios__contenedor-textos {
+		background: #fff;
+		padding: 60px 20px 20px 20px;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.comentarios__foto {
+		width: 80px;
+		height: 80px;
+		border-radius: 80px;
+	}
+
+	.comentarios__texto {
+		font-size: 14px;
+		color: #6f6f6f;
+		margin-bottom: 20px;
+	}
+
+	.comentarios__autor {
+		color:#000;
+		font-weight: 600;
+		font-size: 14px;
+	}
+
+	.comentarios__empresa {
+		font-size: 14px;
+	}
