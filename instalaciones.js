@@ -21,16 +21,6 @@ observer00.observe(galeria00);
 
 
 
-
-
-
-
-
-
-
-
-
-
 const fotos = document.getElementById('primera-clase');
 const fotos2 = document.getElementById('ventana-trabajos');
 
